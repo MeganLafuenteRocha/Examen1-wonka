@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Producto;
 
 class ProductoSeeder extends Seeder
 {
@@ -12,11 +13,6 @@ class ProductoSeeder extends Seeder
      */
     public function run(): void
     {
-        $premium = Marca::where('nombre', 'Chocolates Premium')->first();
-        $magicos = Marca::where('nombre', 'Dulces Mágicos')->first();
-        $clasicos = Marca::where('nombre', 'Caramelos Clásicos')->first();
-        $bebidas = Marca::where('nombre', 'Bebidas Fantásticas')->first();
-        $limitada = Marca::where('nombre', 'Edición Limitada')->first();
 
         $productos = [
             // Chocolates Premium
@@ -25,14 +21,14 @@ class ProductoSeeder extends Seeder
                 'precio' => 35.99,
                 'descripcion' => 'Chocolate negro premium con cacao de las mejores plantaciones.',
                 'stock' => 45,
-                'marca_id' => $premium->id
+                'marca_id' => 2
             ],
             [
                 'nombre' => 'Trufa de Avellana',
                 'precio' => 28.50,
                 'descripcion' => 'Exquisitas trufas rellenas de crema de avellana.',
                 'stock' => 60,
-                'marca_id' => $premium->id
+                'marca_id' => 2
             ],
             
             // Dulces Mágicos
@@ -41,14 +37,14 @@ class ProductoSeeder extends Seeder
                 'precio' => 18.99,
                 'descripcion' => 'El dulce que cambia de sabor y nunca se termina.',
                 'stock' => 40,
-                'marca_id' => $magicos->id
+                'marca_id' => 3
             ],
             [
                 'nombre' => 'Chicle de Cena Completa',
                 'precio' => 22.50,
                 'descripcion' => 'Un chicle que sabe a sopa, carne y pay de arándanos.',
                 'stock' => 30,
-                'marca_id' => $magicos->id
+                'marca_id' => 3
             ],
             
             // Caramelos Clásicos
@@ -57,14 +53,14 @@ class ProductoSeeder extends Seeder
                 'precio' => 12.75,
                 'descripcion' => 'Tradicionales caramelos de miel con el toque especial Wonka.',
                 'stock' => 80,
-                'marca_id' => $clasicos->id
+                'marca_id' => 4
             ],
             [
                 'nombre' => 'Gomitas de Frutas',
                 'precio' => 15.25,
                 'descripcion' => 'Gomitas suaves con sabores naturales de frutas tropicales.',
                 'stock' => 70,
-                'marca_id' => $clasicos->id
+                'marca_id' => 4
             ],
             
             // Bebidas Fantásticas
@@ -73,14 +69,14 @@ class ProductoSeeder extends Seeder
                 'precio' => 35.00,
                 'descripcion' => 'Bebida gaseosa que te hace sentir liviano como una pluma.',
                 'stock' => 20,
-                'marca_id' => $bebidas->id
+                'marca_id' => 5
             ],
             [
                 'nombre' => 'Refresco Violeta',
                 'precio' => 28.75,
                 'descripcion' => 'Refresco con un color violeta intenso y burbujas especiales.',
                 'stock' => 25,
-                'marca_id' => $bebidas->id
+                'marca_id' => 5
             ],
             
             // Edición Limitada
@@ -89,14 +85,14 @@ class ProductoSeeder extends Seeder
                 'precio' => 99.99,
                 'descripcion' => 'Chocolate premium con posibilidad de encontrar un ticket dorado.',
                 'stock' => 5,
-                'marca_id' => $limitada->id
+                'marca_id' => 6
             ],
             [
                 'nombre' => 'Barra del Aniversario',
                 'precio' => 75.00,
                 'descripcion' => 'Edición especial conmemorativa con ingredientes secretos.',
                 'stock' => 8,
-                'marca_id' => $limitada->id
+                'marca_id' => 6
             ]
         ];
 
