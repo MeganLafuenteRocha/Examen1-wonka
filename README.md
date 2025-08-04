@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://laravel.com" target="_blank">
     <img src="https://lh3.googleusercontent.com/a/ACg8ocLe2Qu8N-GPy9f6XNEsVTwJdPtqult77Mp7vuu-asM_fU3jad0=s360-c-no" 
-         width="100" 
+         width="150" 
          alt="Laravel Logo" 
          style="border-radius: 15px;">
   </a>
